@@ -1,0 +1,66 @@
+INSERT INTO [dbo].[Report_Fields]
+           ([Report_Field_Id]
+           ,[Field_name]
+           ,[Display_name]
+           ,[Data_type]
+           ,[Display_Filter_Values]
+           ,[View_Name_For_Filter_values]
+           ,[OrderBYColumn]
+           ,[Is_Deleted]
+           ,[Is_Dependent]
+           ,[Parent_Field_Id]
+           ,[Filter_Field_Name]
+           ,[Is_Parent]
+           ,[Is_Report_Filter_Field]
+           ,[Additional_Parent_Field_Id]
+           ,[Additional_Filter_Field_Name])
+     VALUES
+           (1168
+           ,'{usp_GetOldPendingFeeDetailsForAllYears;1.StartDate}'
+           ,'Paid Date From'
+           ,'datetime'
+           ,''
+           ,''
+           ,''
+           ,'N'
+           ,'N'
+           ,NULL
+           ,NULL
+           ,'N'
+           ,'Y'
+           ,NULL
+           ,NULL)
+
+		   INSERT INTO [dbo].[Report_Fields]
+           ([Report_Field_Id]
+           ,[Field_name]
+           ,[Display_name]
+           ,[Data_type]
+           ,[Display_Filter_Values]
+           ,[View_Name_For_Filter_values]
+           ,[OrderBYColumn]
+           ,[Is_Deleted]
+           ,[Is_Dependent]
+           ,[Parent_Field_Id]
+           ,[Filter_Field_Name]
+           ,[Is_Parent]
+           ,[Is_Report_Filter_Field]
+           ,[Additional_Parent_Field_Id]
+           ,[Additional_Filter_Field_Name])
+     VALUES
+           (1169
+           ,'{usp_GetOldPendingFeeDetailsForAllYears;1.EndDate}'
+           ,'Paid Date To'
+           ,'datetime'
+           ,''
+           ,''
+           ,''
+           ,'N'
+           ,'N'
+           ,NULL
+           ,NULL
+           ,'N'
+           ,'Y'
+           ,NULL
+           ,NULL)
+GO
