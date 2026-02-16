@@ -1,0 +1,224 @@
+INSERT INTO Report_Fields
+(
+    Report_Field_Id,
+    Field_name,
+    Display_name,
+    Data_type,
+    Display_Filter_Values,
+    View_Name_For_Filter_values,
+    OrderBYColumn,
+    Is_Deleted,
+    Is_Dependent,
+    Parent_Field_Id,
+    Filter_Field_Name,
+    Is_Parent,
+    Is_Report_Filter_Field,
+    Additional_Parent_Field_Id,
+    Additional_Filter_Field_Name
+)
+VALUES
+(
+    1170,
+    '{usp_GetNextYearFeePaymentDetails;1.Standard_Id}',
+    'Standard',
+    'CheckBoxList',
+    '2',
+    'vw_Standard',
+    'Original_Standard_Id',
+    'N',
+    'N',
+    NULL,
+    NULL,
+    'N',
+    'Y',
+    NULL,
+    NULL
+);
+
+INSERT INTO Report_Fields
+(
+    Report_Field_Id,
+    Field_name,
+    Display_name,
+    Data_type,
+    Display_Filter_Values,
+    View_Name_For_Filter_values,
+    OrderBYColumn,
+    Is_Deleted,
+    Is_Dependent,
+    Parent_Field_Id,
+    Filter_Field_Name,
+    Is_Parent,
+    Is_Report_Filter_Field,
+    Additional_Parent_Field_Id,
+    Additional_Filter_Field_Name
+)
+VALUES
+(
+    1171,
+    '{usp_GetNextYearFeePaymentDetails;1.Original_Fee_Type_Id}',
+    'Fee Type',
+    'Dropdownlist',
+    '2',
+    'usp_GetMasterFeeTypes',
+    'Value_Member',
+    'N',
+    'N',
+    NULL,
+    NULL,
+    'Y',
+    'Y',
+    NULL,
+    NULL
+);
+
+INSERT INTO Report_Fields
+(
+    Report_Field_Id,
+    Field_name,
+    Display_name,
+    Data_type,
+    Display_Filter_Values,
+    View_Name_For_Filter_values,
+    OrderBYColumn,
+    Is_Deleted,
+    Is_Dependent,
+    Parent_Field_Id,
+    Filter_Field_Name,
+    Is_Parent,
+    Is_Report_Filter_Field,
+    Additional_Parent_Field_Id,
+    Additional_Filter_Field_Name
+)
+VALUES
+(
+    1172,
+    '{usp_GetNextYearFeePaymentDetails;1.PayableFor}',
+    'Payable For',
+    'Dropdownlist',
+    '2',
+    'usp_GetFeeTypewisePayableFor',
+    'Display_Member',
+    'N',
+    'Y',
+    1171,
+    '{usp_GetFeeDetailsForReport;1.Original_Fee_Type_Id}',
+    'N',
+    'Y',
+    NULL,
+    NULL
+);
+
+INSERT INTO Report_Fields
+(
+    Report_Field_Id,
+    Field_name,
+    Display_name,
+    Data_type,
+    Display_Filter_Values,
+    View_Name_For_Filter_values,
+    OrderBYColumn,
+    Is_Deleted,
+    Is_Dependent,
+    Parent_Field_Id,
+    Filter_Field_Name,
+    Is_Parent,
+    Is_Report_Filter_Field,
+    Additional_Parent_Field_Id,
+    Additional_Filter_Field_Name
+)
+VALUES
+(
+    1173,
+    '{usp_GetNextYearFeePaymentDetails;1.IncludeConcession}',
+    'Include Concession?',
+    'CheckBoxList',
+    '',
+    '',
+    NULL,
+    'N',
+    'N',
+    NULL,
+    NULL,
+    'N',
+    'Y',
+    NULL,
+    NULL
+);
+
+
+INSERT INTO Report_Field_Selection
+(
+    Report_Field_Selection_Id,
+    Report_Id,
+    Report_Field_Id,
+    Display_Order,
+    Is_Requried,
+    Is_Deleted
+)
+VALUES
+(
+    1170,
+    209,
+    1170,
+    5,
+    'N',
+    'N'
+);
+
+INSERT INTO Report_Field_Selection
+(
+    Report_Field_Selection_Id,
+    Report_Id,
+    Report_Field_Id,
+    Display_Order,
+    Is_Requried,
+    Is_Deleted
+)
+VALUES
+(
+    1171,
+    209,
+    1171,
+    6,
+    'N',
+    'N'
+);
+
+INSERT INTO Report_Field_Selection
+(
+    Report_Field_Selection_Id,
+    Report_Id,
+    Report_Field_Id,
+    Display_Order,
+    Is_Requried,
+    Is_Deleted
+)
+VALUES
+(
+    1172,
+    209,
+    1172,
+    7,
+    'N',
+    'N'
+);
+
+INSERT INTO Report_Field_Selection
+(
+    Report_Field_Selection_Id,
+    Report_Id,
+    Report_Field_Id,
+    Display_Order,
+    Is_Requried,
+    Is_Deleted
+)
+VALUES
+(
+    1173,
+    209,
+    1173,
+    8,
+    'N',
+    'N'
+);
