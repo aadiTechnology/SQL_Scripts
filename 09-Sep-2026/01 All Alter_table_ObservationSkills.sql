@@ -1,0 +1,2 @@
+ALTER TABLE dbo.ObservationSkills
+ALTER COLUMN Name VARCHAR(500) NOT NULL;
